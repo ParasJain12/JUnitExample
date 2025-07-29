@@ -53,4 +53,10 @@ public class CalculatorServiceTestJunit5 {
 	public static void cleanUp(){
 		System.out.println("Run after test cases, cleanup method is called");
 	}
+	
+	/*
+	 * Some more tags in JUnit 5
+	 * 1. @Tag: Helps to categorize the tags and we can runs test based on these tags using build tools
+	 * 2. @Nested: allow we to define nested test class inside an outer test class
+	 * 3. @TestFactory: allow creation of test case at runtime, not at compile time like @Test*/
 }
