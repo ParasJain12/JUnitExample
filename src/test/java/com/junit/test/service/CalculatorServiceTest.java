@@ -30,8 +30,9 @@ public class CalculatorServiceTest {
 	}
 
 	//We can also add underscore before test in method name, it is good practice
-	@Test
-	public void additionTest() {
+	@Test(timeout = 2000)
+	public void additionTest() throws InterruptedException {
+		//Thread.sleep(3000); //It will not pass test case because it sleeps 3 sec and timeout for this 2 ec
 		for(int i=1;i<=20;i++) {
 			count += i;
 		}
